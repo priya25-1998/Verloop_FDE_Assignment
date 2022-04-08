@@ -1,5 +1,4 @@
 import logging
-import config
 import xml.etree.ElementTree as ET
 from pydantic import BaseModel, validator
 from fastapi import FastAPI, HTTPException
@@ -9,7 +8,7 @@ from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
 
 
-API_KEY = config.api_key
+API_KEY = "SECRET_API_KEY"
 logging.basicConfig(format="%(levelname)s - %(message)s", level=logging.DEBUG)
 
 # These error codes can be retried according to google. Ref: https://github.com/googlemaps/google-maps-services-python/blob/4dd8db6b53049869cf98f2fed3ba8e56676d1709/googlemaps/client.py#L214
