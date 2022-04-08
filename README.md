@@ -15,10 +15,6 @@ git clone
 
 2.Navigate to the directory
 
-```bash
-cd priyanka-api/
-```
-
 3.Create a virtual environment
 
 ```bash
@@ -37,9 +33,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-6.Paste your google maps API key in place of `PASTE_HERE`
-
-7.Run the API
+6.Run the API
 
 ```bash
 uvicorn api:app
